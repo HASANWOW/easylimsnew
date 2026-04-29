@@ -12,3 +12,5 @@ Route::get('/user', function (Request $request) {
 Route ::get('/test', [TestController::class, 'index']);
 
 Route::apiResource('projects', \App\Http\Controllers\API\ProjectController::class);
+
+Route ::apiResource('tasks', \App\Http\Controllers\API\TaskController::class);
